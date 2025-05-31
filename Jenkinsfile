@@ -7,7 +7,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'master', url: ' https://github.com/awsabhi12/ppn.git'
-'
             }
         }
         stage('Build') {
