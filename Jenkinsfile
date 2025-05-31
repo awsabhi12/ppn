@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/yenrimedia/MavenJenkins.git'
+                git branch: 'master', url: ' https://github.com/awsabhi12/ppn.git
+'
             }
         }
         stage('Build') {
@@ -21,7 +22,7 @@ pipeline {
         }       
         stage('Run Application') {
             steps {
-                sh 'java -jar target/MavenJenkins-1.0-SNAPSHOT.jar'
+                // sh 'java -jar target/ppn-1.0-SNAPSHOT.jar'
             }
         }        
     }
