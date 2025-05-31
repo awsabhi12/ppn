@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: ' https://github.com/awsabhi12/ppn.git
+                git branch: 'master', url: ' https://github.com/awsabhi12/ppn.git'
 '
             }
         }
